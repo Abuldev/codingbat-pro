@@ -1,0 +1,49 @@
+server:
+  port: 8090
+  servlet:
+    session:
+      timeout: 10m
+spring:
+  datasource:
+    url: jdbc:postgresql://185.74.5.104:5482/web_user_data
+    username: postgres
+    password: 12061206
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: xikmatabdulloh1@gmail.com
+    password: cqcgezivhrsvqlor
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+jwt:
+  access:
+    key: tHaX54Hwk^YMzKd@e@p7#70OZn0#D98BK8C1%T&hBnrzgqK28o
+    expiration-time: 7200000
+  refresh:
+    key: tHaX54Hwk^YdfdsMzK-d@e@&p7#%70OZ()BK8C1%T&hBnrzgqK287
+    expiration-time: 604800000
+logging:
+  file:
+    name: codingbat.log
+#  level:
+#    org.springframework.web: ERROR
+#    org.example: ERROR
+#    org.hibernate: ERROR
+
+app:
+  admin:
+    username: admin@codingbat.com
+    password: root123

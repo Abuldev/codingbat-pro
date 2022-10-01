@@ -1,0 +1,46 @@
+POST localhost:8090/api/language/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYzODE2OTM4LCJleHAiOjE2NjM4ODg5Mzh9.n2xOGnDXT-ju1XRsqp1J_Ir5QY5mHulE1zj2NdC3T8_qS5i3OEIFkMHhYD2KB7Ed5SBarnu1Su6xJI3T8k4dNw
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQyLmNvbSIsImlhdCI6MTY2MzEzNzMwNCwiZXhwIjoxNjYzMjA5MzA0fQ.BCJrvM0DSbh5e-tZv7ES1gFowby4rE74PfUo6psDibMV_-AnHH4g9sfey3-7G00Lidi5RESzSEl04LBHkUP4vg
+
+{
+  "title": "java"
+}
+###
+PUT localhost:8090/api/language/1
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYzMTM1NDAzLCJleHAiOjE2NjMyMDc0MDN9.OFQ3KYXmFVqJxEbpud8vKCpJKtPX7TO9zHi0lXubWj5NVeEU9XJ5WD-rFCWpi1KHuL9W-0BGis2YjLTFJEEkTg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQyLmNvbSIsImlhdCI6MTY2MzEzNzMwNCwiZXhwIjoxNjYzMjA5MzA0fQ.BCJrvM0DSbh5e-tZv7ES1gFowby4rE74PfUo6psDibMV_-AnHH4g9sfey3-7G00Lidi5RESzSEl04LBHkUP4vg
+
+{
+  "title": "Java"
+}
+
+###
+POST localhost:8090/api/language/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYzMjEzODQ5LCJleHAiOjE2NjMyODU4NDl9.sKNB2v0TF4fsJQT-B1nDSATo97uUxyfShYWprRixgXQEsQxR3jjXYYeO65T-E-65V0iPBA0PGDYH8v9eqrA_MQ
+
+{
+  "title": "JAVA"
+}
+
+###
+POST localhost:8090/api/auth/sign-in
+Content-Type: application/json
+
+{
+  "email": "admin@codingbat.com",
+  "password": "root123"
+}
+
+###
+GET localhost:8090/api/auth/refresh-token
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYyNjIxNTI0LCJleHAiOjE2NjI2MjE1OTZ9.WFblFWPN3ZE-nP4rGxKFq6VxiYWUQlKDVVZRKfxNTZffPuWvcs6iP01VpnqUsTQ2ji-GL38now1llbtw8V1sBQ
+RefreshToken: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYyNjIxNTI0LCJleHAiOjE2NjMyMjYzMjR9.vYzjOO-vRRKdPeuXpaGfVm6KsYFkHY_B4Bsh-6s_ka55AeIWBABytxgzH1Obfp8l3-5SFs-mucGL5httLqXisg
+
+###
+GET http://localhost:8090/api/language/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYyOTYyNTEwLCJleHAiOjE2NjMwMzQ1MTB9.8bkwIx2DllM5whLKt9hi4ZC2EJDGGUbdh07iP3ReQLvSyLRNRZC5eZDtSK3QABnq_zjiLX7ZrpwVyg0T8PEx2A
+###"accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYyNjIxNTI0LCJleHAiOjE2NjI2MjE1OTZ9.WFblFWPN3ZE-nP4rGxKFq6VxiYWUQlKDVVZRKfxNTZffPuWvcs6iP01VpnqUsTQ2ji-GL38now1llbtw8V1sBQ",
+   ### "refreshToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBjb2RpbmdiYXQuY29tIiwiaWF0IjoxNjYyNjIxNTI0LCJleHAiOjE2NjMyMjYzMjR9.vYzjOO-vRRKdPeuXpaGfVm6KsYFkHY_B4Bsh-6s_ka55AeIWBABytxgzH1Obfp8l3-5SFs-mucGL5httLqXisg",
